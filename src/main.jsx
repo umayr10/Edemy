@@ -4,11 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import { AppContext } from './Context/AppContext.jsx'
 import {BrowserRouter} from "react-router-dom";
+import { ClerkProvider } from '@clerk/react'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <AppContext.Provider>
-    <App />
-  </AppContext.Provider>
+    <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}>
+      <AppContext.Provider>
+        <App />
+    </AppContext.Provider>
+    </ClerkProvider>
   </BrowserRouter>
 )
