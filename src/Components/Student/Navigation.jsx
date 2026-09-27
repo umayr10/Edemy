@@ -20,6 +20,8 @@ const Navigation = () => {
         className="w-28 lg:w-32 cursor-pointer"
         alt="Edemy Logo"
       />
+        
+        {/* Desktop Navigation */}
 
       <div className="hidden lg:flex items-center gap-5 text-gray-500">
 
@@ -37,6 +39,18 @@ const Navigation = () => {
         <button className="bg-blue-600 text-white px-5 py-2 rounded-full">
           Create Account
         </button>
+
+      </div>
+
+      {/* Mobile Navigation */}
+
+      <div className="lg:hidden flex items-center gap-2 sm:gap-5 text-gray-500">
+
+        <div>
+          <button>Become an Educator</button>
+          | <Link to="/my-enrollments">My Enrollments</Link>
+        </div>
+        <button className=' text-white'><img src={assets.user_icon} alt="User" /></button>
 
       </div>
 
