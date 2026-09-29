@@ -9,6 +9,9 @@ const Navigation = () => {
 
   const isCourseListPage = location.pathname.includes('/course-list')
 
+  const { user } = useUser()
+  const {openSignIn} = useClerk()
+
   return (
     <div
       className={`flex justify-between items-center px-4 sm:px-10 md:px-14 lg:px-36 py-4 border-b border-gray-500 ${
@@ -37,7 +40,7 @@ const Navigation = () => {
           </Link>
         </div>
 
-        <button className="bg-blue-600 text-white px-5 py-2 rounded-full">
+        <button onClick={()=> openSignIn()} className="bg-blue-600 text-white px-5 py-2 rounded-full">
           Create Account
         </button>
 
