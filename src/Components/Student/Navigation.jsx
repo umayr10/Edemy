@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../../assets/assets.js'
 import { Link, useLocation } from 'react-router-dom'
+import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
 
 const Navigation = () => {
 
