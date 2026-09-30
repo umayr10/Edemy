@@ -13,13 +13,13 @@ import MyCourses from './Pages/Educator/MyCourses.jsx'
 import StudentsEnrolled from './Pages/Educator/StudentsEnrolled.jsx'
 import Navigation from './Components/Student/Navigation.jsx'
 
+
 const App = () => {
 
     const isEducatorRoute = useMatch('/educator/*');
   return (
    <div className='bg-white text-default min-h-screen'>
     {!isEducatorRoute && <Navigation />}
-    <Home />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<CoursesList />} />
