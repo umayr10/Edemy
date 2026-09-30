@@ -19,6 +19,7 @@ const App = () => {
   return (
    <div className='bg-white text-default min-h-screen'>
     {!isEducatorRoute && <Navigation />}
+    <Home />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<CoursesList />} />
