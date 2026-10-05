@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../../Components/Educator/Sidebar'
-import { assets} from '../../assets/assets.js'
+import { assets } from '../../assets/assets.js'
 
 const AddCourse = () => {
   return (
