@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets.js'
 
 const Hero = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className='flex flex-col justify-center items-center gap-8 bg-linear-to-b from-[#E6FFFF] to-[#FFFFFF] h-140.25'>
       <h1 className='text-5xl font-bold w-198 text-center'>Empower your future with the courses designed to <span className='text-blue-500'>fit your choice.</span></h1>
       
