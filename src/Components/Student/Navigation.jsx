@@ -10,7 +10,7 @@ const Navigation = () => {
   const isCourseListPage = location.pathname.includes('/course-list')
 
   const { user } = useUser()
-  const {openSignIn} = useClerk()
+  const { openSignIn } = useClerk()
 
   return (
     <div
@@ -19,13 +19,15 @@ const Navigation = () => {
       }`}
     >
 
+      {/* Logo */}
+
       <img
         src={assets.logo}
-        className="w-28 lg:w-32 cursor-pointer"
+        className="w-24 sm:w-28 lg:w-32 cursor-pointer"
         alt="Edemy Logo"
       />
-        
-        {/* Desktop Navigation */}
+
+      {/* Desktop Navigation */}
 
       <div className="hidden lg:flex items-center gap-5 text-gray-500">
 
@@ -53,15 +55,31 @@ const Navigation = () => {
 
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile / Tablet Navigation */}
 
-      <div className="lg:hidden flex items-center gap-2 sm:gap-5 text-gray-500">
+      <div className="flex lg:hidden items-center gap-3 sm:gap-5 text-gray-500 text-sm sm:text-base">
 
-        <div>
-          <button>Become an Educator</button>
-          | <Link to="/my-enrollments">My Enrollments</Link>
-        </div>
-        <button className=' text-white'><img src={assets.user_icon} alt="User" /></button>
+        <Link
+          to="/my-enrollments"
+          className="hidden sm:block text-blue-500"
+        >
+          My Enrollments
+        </Link>
+
+        <button className="hidden sm:block">
+          Become an Educator
+        </button>
+
+        {user ? (
+          <UserButton />
+        ) : (
+          <button
+            onClick={openSignIn}
+            className="bg-blue-600 text-white px-3 sm:px-5 py-2 rounded-full text-sm"
+          >
+            Sign In
+          </button>
+        )}
 
       </div>
 

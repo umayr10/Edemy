@@ -3,12 +3,12 @@ import { assets } from '../../assets/assets.js'
 
 const Companies = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-4 p-4'>
+    <div className='flex flex-col justify-center w-full max-w-4xl items-center gap-4 p-4'>
       <p>Trusted by learners from</p>
       
       {/* Companies Section */}
 
-      <div className='flex justify-center items-center gap-24 text-center'>
+      <div className='flex justify-center w-full max-w-4xl flex-wrap items-center gap-8 text-center'>
         <img src={assets.microsoft_logo} alt="Microsoft Logo" />
         <img src={assets.walmart_logo} alt="Walmart Logo" />
         <img src={assets.accenture_logo} alt="Accenture Logo" />

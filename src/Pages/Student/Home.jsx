@@ -10,14 +10,14 @@ import course_4  from '../../assets/course_4.png'
 
 function Home() {
   return (
-    <div className="flex flex-col items-center justify-center space-y-7 text-center">
+    <div className="flex flex-col flex-wrap items-center justify-center space-y-7 text-center">
       <Hero className="min-h-screen" />
       <Companies />
 
-      <div className="flex flex-col justify-center items-center gap-8">
+      <div className="flex flex-col flex-wrap justify-center items-center gap-8 my-4">
         <h1 className="text-3xl font-md">Learn from the best</h1>
         
-        <p className="w-157.5 text-center">Discover our top-rated courses across various categories. From coding and design to business and wellness, our courses are crafted to deliver results.</p>
+        <p className="w-full max-w-2xl text-center">Discover our top-rated courses across various categories. From coding and design to business and wellness, our courses are crafted to deliver results.</p>
 
         <div className="flex flex-wrap justify-center gap-4">
           <CourseCard course_thumbnail={ course_1 } course_title="Build Text to Image SaaS app in React JS" course_author="Richard James" course_rating="4.5/5" course_price="$10.99" />
@@ -31,6 +31,8 @@ function Home() {
           <CourseCard course_thumbnail={ course_4 } course_title="Build Full Stack E-Commerce 
           App in React JS" course_author="Richard James" course_rating="4.5/5" course_price="$10.99" /> 
         </div>
+
+        <button className="bg-white border border-gray-400 text-gray-400 px-6 py-2 rounded-md hover:bg-blue-600 hover:text-white cursor-pointer transition duration-300">Show all courses</button>
       </div>
       
     </div>
