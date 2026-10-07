@@ -6,6 +6,7 @@ import  course_1  from '../../assets/course_1.png'
 import course_2  from '../../assets/course_2.png'
 import course_3  from '../../assets/course_3.png'
 import course_4  from '../../assets/course_4.png'
+import Footer from '../../Components/Student/Footer'
 
 
 function Home() {
@@ -34,6 +35,8 @@ function Home() {
 
         <button className="bg-white border border-gray-400 text-gray-400 px-6 py-2 rounded-md hover:bg-blue-600 hover:text-white cursor-pointer transition duration-300">Show all courses</button>
       </div>
+
+      <Footer />
       
     </div>
   )
