@@ -11,8 +11,8 @@ const Footer = () => {
           <p className='max-w-95 text-sm font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt, alias odit officia esse quae sint, quo ex accusantium, illum quaerat maiores quidem iure nobis!</p>
         </div>
 
-        <div>
-          <h3>Company</h3>
+        <div className="flex flex-col gap-4">
+          <h3 className="text-lg font-bold">Company</h3>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Courses</a></li>
@@ -21,19 +21,19 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h3>Subscribe to our Newsletter</h3>
+        <div className="flex flex-col gap-4">
+          <h3 className="text-lg font-bold">Subscribe to our Newsletter</h3>
           <p>Stay updated with our latest courses and offers.</p>
-          <form>
-            <input type="email" placeholder="Enter your email" />
-            <button type="submit">Subscribe</button>
+          <form className="flex flex-col sm:flex-row gap-2">
+            <input className='border border-gray-400 p-2' type="email" placeholder="Enter your email" />
+            <button className='bg-blue-500 text-white p-2 rounded hover:bg-blue-600' type="submit">Subscribe</button>
           </form>
         </div>
         </div>
         
         
         <div className="container mx-auto text-center">
-          <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Edemy. All rights reserved.</p>
         </div>
 
 
