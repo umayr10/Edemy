@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../../assets/assets.js'
+import Searchbar from './Searchbar.jsx'
 
 const Hero = () => {
   return (
@@ -18,7 +19,9 @@ const Hero = () => {
           community to help you achieve your personal and professional goals.
         </p>
 
-        <div className="flex items-center w-full max-w-xl border border-gray-400 rounded-md gap-2 p-1 bg-white">
+        <Searchbar />
+
+        {/* <div className="flex items-center w-full max-w-xl border border-gray-400 rounded-md gap-2 p-1 bg-white">
 
           <img
             src={assets.search_icon}
@@ -36,7 +39,7 @@ const Hero = () => {
             Search
           </button>
 
-        </div>
+        </div> */}
 
       </div>
     </div>
